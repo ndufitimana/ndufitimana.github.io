@@ -1,0 +1,173 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .profile span {
+    display: block; /* add this line */
+    margin-left: 10px;
+    font-size: 10px;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: gray;
+  }
+  .profile ul {
+    list-style-type: none; /* remove the dots */
+  }
+  
+  img.profile {
+    border-radius: 100px; /* make all four border radii equal to 100px */
+    width: 200px;
+    height: 200px;
+  }
+  .contact-info {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  header nav li {
+    margin: 0 10px;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    margin: 20px;
+  }
+  body {
+    background-color: #dce5e8;
+  }
+  
+  
+  .sidebar {
+    width: 25%;
+    background-color: #eee;
+    padding: 20px;
+  }
+  
+  .sidebar img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .content {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  #timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #timeline h2 {
+    margin: 20px 0;
+  }
+  
+  #timeline ul {
+    width: 90%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  #timeline li {
+    width: 50%;
+    margin: 20px 0;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  #timeline li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    bottom: 0;
+    width: 10px;
+    background-color: #333;
+  }
+  
+  #timeline h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  #timeline p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  #timeline p:first-of-type {
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+    .card-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-links a {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 8px;
+  }
+  
+  .card-links img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  
