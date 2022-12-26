@@ -124,8 +124,8 @@
   .content {
     width: 75%;
     padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    /* font-family: 'Montserrat', sans-serif;
+    font-weight: 100; */
   }
   
   #timeline {
