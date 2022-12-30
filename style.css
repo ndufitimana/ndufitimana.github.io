@@ -121,12 +121,19 @@
     border-radius: 50%;
   }
   
-  .content {
+  /* .content {
     width: 75%;
     padding: 20px;
     /* font-family: 'Montserrat', sans-serif;
-    font-weight: 100; */
-  }
+    font-weight: 100; 
+  } 
+  */
+    /* Use a flexbox layout for the content */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
   
   #timeline {
     display: flex;
@@ -274,6 +281,23 @@
       padding-right: 10px;
       color: #bbb;
   }
+
+
+
+/* Style the content items */
+.content div {
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Make the items stack vertically on small screens */
+@media (max-width: 600px) {
+  .content div {
+    width: 100%;
+  }
+}
+
   
   
   
