@@ -124,15 +124,15 @@
   /* .content {
     width: 75%;
     padding: 20px;
-    /* font-family: 'Montserrat', sans-serif;
-    font-weight: 100; 
+
   } 
   */
-    /* Use a flexbox layout for the content */
+    /* Use a flexbox layout for the content
 .content {
   display: flex;
   flex-wrap: wrap;
 }
+*/
 
   
   #timeline {
@@ -235,7 +235,7 @@
       padding-right: 15px;
   }
   @media (min-width: 992px) {
-      .container {
+      .content {
           width: 970px;
        }
   }
