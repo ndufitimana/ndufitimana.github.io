@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nelson Dufitimana</title>
+    <!-- for boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+        <header>
+        <!-- <h1>Nelson Dufitimana</h1>
+        <nav>
+            <ul>
+            <li><a href="#">Blog</a></li>
+            </ul>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Nelson Dufitimana</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+  
+            </div>
+          </div>
+        </nav>
+        </header>
+        <div class="profile">
+            <img src="./images/nelson.png" alt="Profile picture">
+            <span> <ul>
+            <li>Learning through projects</li>
+            <li>to know my CS area of interest</li>
+            </ul></span>
+        </div>
+        <div class="card-links">
+            <a href="https://www.linkedin.com/in/nelson-dufitimana/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/linkedIn.png" width="48" height="48"/>
+            </a>
+            <a href="https://github.com/ndufitimana" target="_blank" rel="noopener noreferrer">
+                <img src="./images/github.jpeg" width="48" height="48">
+            </a>
+            <a href="https://leetcode.com/ndufitimana/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/leetcode.png" width="48" height="48">
+            </a>
+            <a href="mailto:nelsondft10@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src="./images/icons8-mail-96.png" width="48" height="48">
+            </a>
+        </div>
+
+            <div class="content">
+              <h3>Education and SWE Experience</h3>
+                 <div id="history" class="container">
+                    <div class="entry row">
+                    <div class="timespan">
+                        Aug 2020 - May 2024
+                    </div>
+                    <div class="ico">
+                        <div class="entry-dot"></div>
+                        <img src="./images/swat.jpeg" />
+                    </div>
+                    <div class="desc">
+                        <div class="htxt">
+                        I am a student at Swarthmore College where I am a double major in Computer Science and Economics. Some of my relevant coursework includes Advanced Algorithms, Artificial Intelligence, Compilers, Introduction to Computer Systems, Introduction to Data Structures and Algorithms, Discrete Mathematics, Linear Algebra, Statistical Methods, and Econometrics.
+                        </div>
+                    </div>
+                    </div>
+            
+                    <div class="entry row">
+                    <div class="timespan">
+                        May 2022 - Aug 2022
+                    </div>
+                    <div class="ico">
+                        <div class="entry-dot"></div>
+                        <img src="./images/msft.png" />
+                    </div>
+                    <div class="desc">
+                    I was an Intern at Microsoft Corporation under the Enterprise and Security Team. During my internship, I built a pipeline that uses a querying interface to extract >1TiB IoT Hub Device data from Azure Cloud. I also performed statistical analysis on >60% of IoT Hub Devices and visually represented the results using PowerBi. In addition, I successfully completed a hands-on Cloud Development Boot Camp focused on implementing reliable applications for the cloud.
+                    </div>
+                    </div>
+              </div>
+               <h3>Technical Projects</h3>
+              <div id="history" class="container" >
+           
+          
+                <div class="entry row">
+                  <div class="timespan">
+                    Graph Coloring
+                  </div>
+                  <div class="ico">
+                    <div class="entry-dot"></div>
+                  </div>
+                  <div class="desc">
+                    <div class="htxt">
+                      This project involved the implementation of three Local Search Algorithms: 
+                      Hill Climbing, Simulated Annealing, and Stochastic Beam Search. 
+                      These algorithms were used to solve the NP-Complete Problem of Graph Coloring in Computer Science. 
+                      The goal of this problem is to color the vertices of a graph such that no two adjacent vertices share 
+                      the same color while minimizing the number of colors used. 
+                      I conducted several experiments on these algorithms to compare their performance 
+                      in solving any Graph Coloring Problem by varying different parameters.
+
+                      <a class="btn btn-outline-secondary btn-sm" href="https://github.com/ndufitimana/GraphColoring" role="button">Github</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="entry row">
+                  <div class="timespan">
+                    Bookmark REST API
+                  </div>
+                  <div class="ico">
+                    <div class="entry-dot"></div>
+                  </div>
+                  <div class="desc">
+                    Built a Flask REST API that implements a bookmark feature with the following endpoints: 
+                    <strong>/users/int:id</strong>, <strong>/users</strong>, <strong>/bookmark</strong>, 
+                    <strong>/bookmarks</strong>, <strong>/bookmark/int:bookmark_id</strong>, and <strong>/tokens</strong>. 
+                    The <strong>/tokens</strong> endpoint allows users to request a new token or revoke their current token.
+                    This feature is implemented using Flask-HTTPAuth to protect certain endpoints 
+                    with tokens in order to restrict certain behaviors only to authorized users.
+                    while the other endpoints are used to retrieve and create information about users, bookmarks, 
+                    and bookmarks for a specific user. Data related to users and bookmarks is stored using 
+                    a SQLite database created with Flask-SQLAlchemy.
+
+                    <a class="btn btn-outline-secondary btn-sm" href="https://github.com/ndufitimana/Bookmark_REST_API" role="button">Github</a>
+                  </div>
+                </div>
+                <div class="entry row">
+                  <div class="timespan">
+                    ASL CNN
+                  </div>
+                  <div class="ico">
+                    <div class="entry-dot"></div>
+                  </div>
+                  <div class="desc">
+                  Built and Trained Convolutional Neural Networks using Tensorflow and Keras. 
+                  The goal of CNN was to recognize the American Sign Language (ASL) Alphabet. 
+                  To train and test the model, I used the ASL Alphabet dataset from Kaggle, 
+                  which can be accessed at this link: 
+                  <a href="https://www.kaggle.com/datasets/grassknoted/asl-alphabet">https://www.kaggle.com/datasets/grassknoted/asl-alphabet</a>. 
+                  The CNN achieved an accuracy of <strong>98.38%</strong> on the test set.
+
+                  <a class="btn btn-outline-secondary btn-sm" href="https://github.com/ndufitimana/ASL_CNN" role="button">Github</a>
+                  </div>
+                </div>
+          
+                <div class="entry row">
+                  <div class="timespan">
+                    MCTS and MiniMax on Connect-4
+                  </div>
+                  <div class="ico">
+                    <div class="entry-dot"></div>
+                  </div>
+                  <div class="desc">
+                    A project involving the implementation of two adversarial search algorithms:
+                    Monte Carlo Tree Search(MCTS) and Minimax Algorithms. These algorithms were used to play the Connect-4 Game on the terminal. 
+                    I implemented a Connect-4 game version that uses the terminal. I ran several experiments on these algorithms to compare 
+                    their performance using different parameters. Specifically, I varied the number of rollouts for MCTS and the search depth for Minimax. 
+
+                    <a class="btn btn-outline-secondary btn-sm" href="https://github.com/ndufitimana/Connect_4" role="button">Github</a>
+
+                   </div>
+                  </div>
+              </div>
+            </div>
+    <footer>
+      <p>Nelson Dufitimana </p>
+    </footer>
+  </body>
+</html>
