@@ -19,6 +19,13 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+/* .section {
+  margin-bottom: 40px;
+}
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+} */
 .section {
   margin-bottom: 40px;
 }
@@ -26,6 +33,15 @@ p {
   font-size: 24px;
   margin-bottom: 20px;
 }
+.section-title::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  display: block;
+  margin-top: 10px;
+}
+
 /* Add a vertical timeline for the work experience and side projects sections */
 .timeline {
   display: flex;
