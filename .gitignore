@@ -1,0 +1,12 @@
+# Local development server
+serve.py
+
+# Project documentation
+requirements.md
+
+# Other common files to ignore
+*.pyc
+__pycache__/
+.env
+.DS_Store
+Thumbs.db
