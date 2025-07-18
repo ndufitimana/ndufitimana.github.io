@@ -1,128 +1,450 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
-body {
-  font-family: 'Roboto Mono', monospace;
+/* Reset and base styles */
+* {
   margin: 0;
   padding: 0;
-}
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-h1 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-/* .section {
-  margin-bottom: 40px;
-}
-.section-title {
-  font-size: 24px;
-  margin-bottom: 20px;
-} */
-.section {
-  margin-bottom: 40px;
-  float: left;
-}
-.section-title-top {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.section-title {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.section-title::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #000;
-  display: block;
-  margin-top: 10px;
+  box-sizing: border-box;
 }
 
-/* Add a vertical timeline for the work experience and side projects sections */
-.timeline {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Hero Section */
+.hero {
+  margin-bottom: 4rem;
+}
+
+.profile-section {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
-.timeline-item {
+
+.profile-picture {
+  flex-shrink: 0;
+}
+
+.profile-picture img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f0f0f0;
+}
+
+.profile-info h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+/* Social Media */
+.social-media {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #333;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.2s ease;
+}
+
+.social-media li a:hover {
+  background-color: #555;
+}
+
+/* Timeline Sections */
+.timeline-section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
   position: relative;
-  margin-bottom: 20px;
 }
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #333;
+  margin-top: 0.5rem;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 70px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e0e0e0;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
 .timeline-item::before {
   content: '';
   position: absolute;
-  top: 7px;
-  left: -20px;
-  width: 10px;
-  height: 10px;
-  background-color: #333;
+  left: 67px;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  background-color: #999;
   border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 0 4px #fff;
 }
-/* Add a style for the company icon */
-.company-icon {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-}
-.company-icon img {
-  width: 40px;
-  height: 40px;
-}
-/* Add a place holder for the profile picture and social media icons */
-.profile-picture {
-  width: 200px;
-  height: 200px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin-right: 20px;
-  float: left; 
-}
-.profile-picture img {
-    border-radius: 50%; /* create a circular profile picture */
-    width: 200px; /* set the width to 200 pixels */
-    height: 200px; /* set the height to 200 pixels */
-  }
-.social-media {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+/* Company grouping styles */
+.company-group .timeline-content {
+  flex: 1;
   display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-left: 100px;
 }
-.social-media li {
-  margin-right: 10px;
+
+.company-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
 }
-.social-media li a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  border-radius: 50%;
-  color: white;
-  text-align: center;
-  line-height: 40px;
-  font-size: 24px;
-  text-decoration: none;
+
+.positions-timeline {
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+  position: relative;
 }
-.social-media li a:hover {
+
+.position-item {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-top: 0.5rem;
+}
+
+.position-item::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 1.2rem;
+  width: 6px;
+  height: 6px;
   background-color: #666;
+  border-radius: 50%;
+  z-index: 2;
 }
-    /* Add a footer to the website */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
+
+.position-date {
+  font-weight: 500;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.position-role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.position-description {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.timeline-date {
+  flex-shrink: 0;
+  width: 140px;
+  font-weight: 500;
+  color: #666;
+  font-size: 0.95rem;
+  padding-top: 0.25rem;
+  margin-right: 2rem;
+}
+
+/* For regular timeline items (projects) */
+.timeline-item:not(.company-group) .timeline-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-left: 100px;
+}
+
+/* For regular timeline items (projects) - adjust the dot position */
+.timeline-item:not(.company-group)::before {
+  left: 67px;
+  top: 8px;
+}
+
+.company-logo {
+  flex-shrink: 0;
+}
+
+.company-logo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e0e0e0;
+}
+
+.timeline-text h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #1a1a1a;
+}
+
+.timeline-text .role {
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.timeline-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.project-link {
+  display: inline-block;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s ease;
+}
+
+.project-link:hover {
+  border-bottom-color: #0066cc;
+}
+
+/* Code styling */
+code {
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-style: italic;
+}
+
+.error-message {
+  background-color: #fee;
+  border: 1px solid #fcc;
+  color: #c33;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
   text-align: center;
 }
-footer a {
+
+/* View More Button */
+.view-more-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  margin-left: 100px;
+}
+
+.view-more-btn {
+  background-color: #333;
   color: white;
-  text-decoration: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.view-more-btn:hover {
+  background-color: #555;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-more-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .profile-picture img {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .profile-info h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .timeline::before {
+    display: none;
+  }
+  
+  .timeline {
+    padding-left: 0;
+  }
+  
+  .timeline-item::before {
+    display: none;
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+  }
+  
+  .company-group .timeline-content {
+    margin-left: 0;
+  }
+  
+  .timeline-item:not(.company-group) .timeline-content {
+    margin-left: 0;
+  }
+  
+  .positions-timeline {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  .position-item::before {
+    display: none;
+  }
+  
+  .position-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .timeline-date {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .timeline-content {
+    gap: 1rem;
+  }
+  
+  .company-logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .view-more-container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem 0.75rem;
+  }
+  
+  .profile-info h1 {
+    font-size: 1.75rem;
+  }
+  
+  .timeline-content {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .company-logo {
+    align-self: flex-start;
+  }
 }

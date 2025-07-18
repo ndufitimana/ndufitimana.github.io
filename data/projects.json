@@ -1,0 +1,30 @@
+[
+  {
+    "id": "graph-coloring",
+    "date": "2023",
+    "title": "Graph Coloring",
+    "description": "This project involved the implementation of three Local Search Algorithms: Hill Climbing, Simulated Annealing, and Stochastic Beam Search. These algorithms were used to solve the NP-Complete Problem of Graph Coloring in Computer Science. The goal of this problem is to color the vertices of a graph such that no two adjacent vertices share the same color while minimizing the number of colors used. I conducted several experiments on these algorithms to compare their performance in solving any Graph Coloring Problem by varying different parameters.",
+    "github": "https://github.com/ndufitimana/GraphColoring"
+  },
+  {
+    "id": "bookmark-api",
+    "date": "2023",
+    "title": "Bookmark REST API",
+    "description": "Built a REST API that implements a bookmark feature with the following endpoints using Flask: `/users/int:id`, `/users`, `/bookmark`, `/bookmarks`, `/bookmark/int:bookmark_id`, and `/tokens`. The `/tokens` endpoint allows users to request a new token or revoke their current token. This feature is implemented using Flask-HTTPAuth to protect certain endpoints with tokens in order to restrict certain behaviors only to authorized users. The remaining endpoints serve to retrieve and create information about users, and bookmarks. Data related to users and bookmarks is stored using a SQLite database created with Flask-SQLAlchemy.",
+    "github": "https://github.com/ndufitimana/Bookmark_REST_API"
+  },
+  {
+    "id": "asl-cnn",
+    "date": "2022",
+    "title": "ASL CNN",
+    "description": "Built and Trained a Convolutional Neural Network using Tensorflow and Keras. The goal of CNN was to recognize the American Sign Language (ASL) Alphabet. To train and test the model, I used the ASL Alphabet dataset from Kaggle, which can be accessed at this link: https://www.kaggle.com/datasets/grassknoted/asl-alphabet. The CNN achieved an accuracy of **98.38%** on the test set.",
+    "github": "https://github.com/ndufitimana/ASL_CNN"
+  },
+  {
+    "id": "connect4-ai",
+    "date": "2022",
+    "title": "MCTS and MiniMax on Connect-4",
+    "description": "A project involving the implementation of two adversarial search algorithms: Monte Carlo Tree Search(MCTS) and Minimax Algorithms. These algorithms were used to play the Connect-4 Game on the terminal. I implemented a Connect-4 game version that uses the terminal. I ran several experiments on these algorithms to compare their performance using different parameters. Specifically, I varied the number of rollouts for MCTS and the search depth for Minimax.",
+    "github": "https://github.com/ndufitimana/Connect_4"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "microsoft",
+    "company": "Microsoft Corporation",
+    "logo": "./images/msft.png",
+    "type": "work",
+    "positions": [
+      {
+        "id": "microsoft-2024",
+        "date": "July 2024 - Present",
+        "role": "Software Engineer",
+        "description": "As a Software Engineer at Microsoft, I contribute to performance and reliability improvements in container networking, with a focus on technologies like Cilium, HNS, and Host Compute Network (HCN) APIs. My work includes debugging complex networking issues, integrating telemetry, and automating test infrastructure across Windows Server environments. I collaborate cross-functionally to support performance validation, troubleshoot internal tooling, and drive experimentation initiatives. My experience spans scripting, system-level diagnostics, and contributing to scalable, production-grade infrastructure."
+      },
+      {
+        "id": "microsoft-2023",
+        "date": "Summer 2023",
+        "role": "Software Engineering Intern",
+        "description": "Conducted technical research on relevant factors affecting the performance of HTTP/3 (MSQUIC) servers. Built a performance reporting tool that collects load time and CPU usage data on HTTP/3 (MSQUIC) test websites. Utilized Linux's netem to add latency and packet loss to network traffic to simulate real-world network conditions throughout the tests."
+      },
+      {
+        "id": "microsoft-2022",
+        "date": "Summer 2022",
+        "role": "Explorer Intern",
+        "description": "I build a pipeline that uses a querying interface to extract >1TiB IoT Hub Device data from Azure Cloud. I also perform statistical analysis on >60% of IoT Hub Devices and visually represent the results using PowerBi. In addition, I successfully completed a hands-on Cloud Development Boot Camp focused on implementing reliable applications for the cloud."
+      }
+    ]
+  },
+  {
+    "id": "swarthmore",
+    "company": "Swarthmore College",
+    "logo": "./images/swat.jpeg",
+    "type": "education",
+    "positions": [
+      {
+        "id": "swarthmore-degree",
+        "date": "Aug 2020 - May 2024",
+        "role": "BA, Computer Science and Economics",
+        "description": "I was a student at Swarthmore College, PA where I was a double major in Computer Science and Economics. My relevant coursework included Advanced Algorithms, Artificial Intelligence, Compilers, Introduction to Computer Systems, Introduction to Data Structures and Algorithms, Discrete Mathematics, Linear Algebra, Statistical Methods, and Econometrics."
+      }
+    ]
+  }
+]
